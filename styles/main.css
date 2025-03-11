@@ -1,0 +1,101 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #555578;
+  color: #fff;
+  padding: 25px 0;
+  font-size: 18px;
+}
+
+.form-container {
+  max-width: 90%;
+  width: 500px;
+  margin: 50px auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  color: #555578;
+}
+
+p {
+  color: #000000;
+}
+
+input[type=email] {
+  width: 80%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #1919d2;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #555578;
+}
+
+.photo-grid-wrapper {
+  overflow: hidden;
+  width: 100%;
+  padding: 20px 0;
+  position: relative;
+}
+
+.photo-grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+.photo-grid .photo-track {
+  display: flex;
+  gap: 10px;
+  width: -moz-max-content;
+  width: max-content;
+  animation: scroll-left 120s linear infinite;
+}
+.photo-grid img {
+  width: 120px;
+  height: 120px;
+  border-radius: 5px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@keyframes scroll-left {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+@media (min-width: 600px) {
+  .photo-grid img {
+    width: 150px;
+    height: 150px;
+  }
+}
+@media (min-width: 1024px) {
+  .photo-grid img {
+    width: 200px;
+    height: 200px;
+  }
+}/*# sourceMappingURL=main.css.map */
