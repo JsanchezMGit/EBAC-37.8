@@ -6,11 +6,15 @@ body {
   padding: 0;
 }
 
-header {
+header, footer {
   background-color: #555578;
   color: #fff;
   padding: 25px 0;
   font-size: 18px;
+}
+
+a:visited {
+  color: #fff;
 }
 
 .form-container {

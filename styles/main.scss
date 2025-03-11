@@ -13,11 +13,15 @@ body {
   padding: 0;
 }
 
-header {
+header, footer {
   background-color: $primary-color;
   color: $white-color;
   padding: 25px 0;
   font-size: 18px;
+}
+
+a:visited {
+  color: $white-color;
 }
 
 .form-container {
